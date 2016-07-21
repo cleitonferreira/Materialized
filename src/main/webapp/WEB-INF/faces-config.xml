@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	version="2.2">
+
+	<managed-bean>
+		<managed-bean-name>localeBean</managed-bean-name>
+		<managed-bean-class>br.com.materialized.LocaleBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+
+
+	<!-- mensagens do Hibernate Validator para pt_BR -->
+	<application>
+
+		<!-- Arquivo de Confg Messages -->
+		<message-bundle>internacionalizacao.Messages</message-bundle>
+
+		<locale-config>
+			<default-locale>pt_BR</default-locale>
+			<supported-locale>en</supported-locale>
+			<supported-locale>pt_BR</supported-locale>
+		</locale-config>
+
+		<!-- Internacionalização -->
+		<resource-bundle>
+			<base-name>internacionalizacao.mensagens</base-name>
+			<var>msg</var>
+		</resource-bundle>
+
+
+		<!-- <resource-handler> -->
+		<!-- org.omnifaces.resourcehandler.UnmappedResourceHandler -->
+		<!-- </resource-handler> -->
+
+
+	</application>
+
+
+</faces-config>
