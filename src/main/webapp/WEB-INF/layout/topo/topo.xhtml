@@ -30,7 +30,7 @@
 						<li><a href="javascript:void(0);"
 							class="waves-effect waves-block waves-light translation-button"
 							data-activates="translation-dropdown"><h:graphicImage
-									library="img/language" name="Brasil.png" alt="Brasil" /></a></li>
+									library="img/language" name="#{localeBean.bandeira}" /></a></li>
 						<li><a href="javascript:void(0);"
 							class="waves-effect waves-block waves-light toggle-fullscreen"><i
 								class="mdi-action-settings-overscan"></i></a></li>
@@ -44,23 +44,39 @@
 								class="mdi-communication-chat"></i></a></li>
 					</ul>
 					<!-- translation-button -->
-					<ul id="translation-dropdown" class="dropdown-content">
-						<li><a href="#!"> <h:graphicImage library="img/language"
-									name="Brasil.png" alt="Brasil" /> <span
-								class="language-select">Brasil</span></a></li>
-						<li><a href="#!"> <h:graphicImage library="img/language"
-									name="United-States.png" alt="English" /> <span
-								class="language-select">English</span></a></li>
-						<li><a href="#!"> <h:graphicImage library="img/language"
-									name="France.png" alt="French" /> <span
-								class="language-select">French</span></a></li>
-						<li><a href="#!"> <h:graphicImage library="img/language"
-									name="China.png" alt="Chinese" /> <span
-								class="language-select">Chinese</span></a></li>
-						<li><a href="#!"> <h:graphicImage library="img/language"
-									name="Germany.png" alt="German" /> <span
-								class="language-select">German</span></a></li>
-					</ul>
+					<h:form id="internacionalizacao" enctype="multipart/form-data">
+						<ul id="translation-dropdown" class="dropdown-content">
+							<li><h:commandLink action="#{localeBean.portugueseLocale}">
+									<h:graphicImage library="img/language" name="Brasil.png" />
+									<span class="language-select"><h:outputText
+											value="#{msg.portugues}" /></span>
+								</h:commandLink></li>
+							<li><h:commandLink action="#{localeBean.englishLocale}">
+									<h:graphicImage library="img/language" name="United-States.png" />
+									<span class="language-select"><h:outputText
+											value="#{msg.ingles}" /></span>
+								</h:commandLink></li>
+							<li><h:commandLink action="#{localeBean.espanholLocale}">
+									<h:graphicImage library="img/language" name="Espanha.png" />
+									<span class="language-select"><h:outputText
+											value="#{msg.espanhol}" /></span>
+								</h:commandLink></li>
+							<li><h:commandLink action="#{localeBean.francesLocale}">
+									<h:graphicImage library="img/language" name="France.png" />
+									<span class="language-select"><h:outputText
+											value="#{msg.frances}" /></span>
+								</h:commandLink></li>
+<!-- 							<li><a href="#!"> <h:graphicImage library="img/language" -->
+<!-- 										name="China.png" /> <span class="language-select">Chinese</span></a> -->
+<!-- 							</li> -->
+							<li><h:commandLink action="#{localeBean.alemaoLocale}">
+									<h:graphicImage library="img/language" name="Germany.png" />
+									<span class="language-select"><h:outputText
+											value="#{msg.alemao}" /></span>
+								</h:commandLink></li>
+
+						</ul>
+					</h:form>
 					<!-- notifications-dropdown -->
 					<ul id="notifications-dropdown" class="dropdown-content">
 						<li>

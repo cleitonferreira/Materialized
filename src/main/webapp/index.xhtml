@@ -24,12 +24,15 @@
 
 			<!--breadcrumbs start-->
 			<div id="breadcrumbs-wrapper">
-				<!-- Search for small screen -->
-				<div class="header-search-wrapper grey hide-on-large-only">
-					<i class="mdi-action-search active"></i>
-					<p:inputText id="Search" styleClass="header-search-input z-depth-2"
-						placeholder="Explore Materialized" />
-				</div>
+				<h:form>
+					<!-- Search for small screen -->
+					<div class="header-search-wrapper grey hide-on-large-only">
+						<i class="mdi-action-search active"></i>
+						<p:inputText id="Search"
+							styleClass="header-search-input z-depth-2"
+							placeholder="Explore Materialized" />
+					</div>
+				</h:form>
 				<div class="container">
 					<div class="row">
 						<div class="col s12 m12 l12">
@@ -53,33 +56,22 @@
 					<p class="caption">A Simple Blank Page to use it for your
 						custome design and elements.</p>
 					<div class="divider"></div>
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
+
+
+					<h5>
+						<h:outputText value="#{msg.titulo}" />
+
+						<br /> <br />
+
+						<h:outputText value="#{msg.linguagem}" />
+					</h5>
+
+					<!-- 					<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> -->
+					<!-- 					<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> -->
+					<!-- 					<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> -->
 
 				</div>
+
 				<!-- Floating Action Button -->
 				<div class="fixed-action-btn" style="bottom: 50px; right: 19px;">
 					<a class="btn-floating btn-large"> <i class="mdi-action-stars"></i>
