@@ -44,88 +44,89 @@
 </h:head>
 
 <h:body>
-	<!-- Start Page Loading -->
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-	</div>
-	<!-- End Page Loading -->
 
-	<!-- //////////////////////////////////////////////////////////////////////////// -->
+	<div class="wrapper">
 
 
-	<!-- Topo do Layout -->
-	<ui:include src="/WEB-INF/layout/topo/topo.xhtml" />
+		<!-- Start Page Loading -->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+		<!-- End Page Loading -->
+
+		<!-- //////////////////////////////////////////////////////////////////////////// -->
 
 
-
-
-
-
-
-	<!-- START MAIN -->
-	<div id="main">
-		<!-- START WRAPPER -->
-		<div class="wrapper">
-
-
-
-
-
-			<!-- Menu Layout - Desenvolvedor  -->
-			<ui:include src="/WEB-INF/layout/menu/menuDesenv.xhtml" />
+		<!-- Topo do Layout -->
+		<ui:include src="/WEB-INF/layout/topo/topo.xhtml" />
 
 
 
 
 
 
-			<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+		<!-- START MAIN -->
+		<div id="main">
+			<!-- START WRAPPER -->
+			<div class="wrapper">
+
+
+
+
+
+				<!-- Menu Layout - Desenvolvedor  -->
+				<ui:include src="/WEB-INF/layout/menu/menuDesenv.xhtml" />
 
 
 
 
 
 
-			<div id="conteudo">
-				<ui:insert name="corpo" />
+				<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+				<div id="conteudo">
+					<ui:insert name="corpo" />
+				</div>
+
+
+
+
+
+
+
+				<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+				<!-- Favoritos do Layout -->
+				<ui:include src="/WEB-INF/layout/favorito/favoritos.xhtml" />
+
+
+
+
 			</div>
-
-
-
-
-
-
-
-			<!-- //////////////////////////////////////////////////////////////////////////// -->
-
-
-			<!-- Favoritos do Layout -->
-			<ui:include src="/WEB-INF/layout/favorito/favoritos.xhtml" />
-
-
-
+			<!-- END WRAPPER -->
 
 		</div>
-		<!-- END WRAPPER -->
+		<!-- END MAIN -->
 
+
+		<div class="push"></div>
 	</div>
-	<!-- END MAIN -->
-
 
 	<!-- //////////////////////////////////////////////////////////////////////////// -->
 
-
-
-
 	<!-- Rodapé do Layout -->
-	<span id="rodapeLayout">
+	<footer class="footer">
 		<ui:include src="/WEB-INF/layout/rodape/rodape.xhtml" />
-	</span>
-
-
-
+	</footer>
 
 
 
